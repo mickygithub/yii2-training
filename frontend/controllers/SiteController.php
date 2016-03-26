@@ -74,6 +74,18 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+    public function actionUrl(){
+        $fname ='wichian';
+        $lname ='nunsri';
+        $age = '31';
+       
+        return $this->render('url',[
+            'fname'=>$fname,
+            'lname'=>$lname,
+            'age'=>$age
+            ]);
+    }
 
     /**
      * Logs in a user.
